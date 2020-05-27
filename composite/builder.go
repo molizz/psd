@@ -7,7 +7,7 @@ import (
 
 	"golang.org/x/text/encoding"
 
-	"github.com/oov/psd"
+	"github.com/molizz/psd"
 )
 
 type builder struct {

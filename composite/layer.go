@@ -14,7 +14,7 @@ import (
 	"golang.org/x/image/math/f64"
 	"golang.org/x/text/encoding"
 
-	"github.com/oov/psd"
+	"github.com/molizz/psd"
 )
 
 const SeqIDRoot = -1
@@ -214,7 +214,7 @@ func New(ctx context.Context, psdFile io.Reader, opt *Options) (*Tree, error) {
 	}
 
 	b := &builder{
-		Img: img,
+		Img:                       img,
 		LayerNameEncodingDetector: opt.LayerNameEncodingDetector,
 	}
 	root := Layer{

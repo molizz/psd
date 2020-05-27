@@ -9,7 +9,7 @@ import (
 	"golang.org/x/image/draw"
 	"golang.org/x/image/math/f64"
 
-	"github.com/oov/psd/blend"
+	"github.com/molizz/psd/blend"
 )
 
 type layerImage struct {

@@ -458,7 +458,7 @@ func TestDecodeFail(t *testing.T) {
 }
 
 func TestSketchBookPSDFail(t *testing.T) {
-	// https://github.com/oov/psd/issues/3
+	// https://github.com/molizz/psd/issues/3
 	Debug = &testLogger{t}
 	testOne(testImage{
 		Name: "PSD(Autodesk SketchBook)",

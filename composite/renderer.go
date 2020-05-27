@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/oov/psd"
-	"github.com/oov/psd/blend"
+	"github.com/molizz/psd"
+	"github.com/molizz/psd/blend"
 )
 
 type drawResult int

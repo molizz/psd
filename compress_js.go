@@ -18,7 +18,7 @@ func decodePackBits(dest []byte, r io.Reader, width int, lines int, large bool) 
 	}
 	read += l
 
-	lens := js.Global.Get("$github.com/oov/psd$").Call("decodePackBitsLines", b, lines, large).Interface().([]uint)
+	lens := js.Global.Get("$github.com/molizz/psd$").Call("decodePackBitsLines", b, lines, large).Interface().([]uint)
 	if lens == nil {
 		return read, errors.New("psd: error occurred in decodePackBitsLines")
 	}
@@ -32,7 +32,7 @@ func decodePackBits(dest []byte, r io.Reader, width int, lines int, large bool) 
 		return
 	}
 	read += l
-	if !js.Global.Get("$github.com/oov/psd$").Call("decodePackBits", dest, b, lens).Bool() {
+	if !js.Global.Get("$github.com/molizz/psd$").Call("decodePackBits", dest, b, lens).Bool() {
 		return read, errors.New("psd: error occurred in decodePackBits")
 	}
 	return

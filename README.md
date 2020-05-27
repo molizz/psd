@@ -28,7 +28,7 @@ import (
 	"image/png"
 	"os"
 
-	_ "github.com/oov/psd"
+	_ "github.com/molizz/psd"
 )
 
 func main() {
@@ -66,7 +66,7 @@ import (
 	"image/png"
 	"os"
 
-	"github.com/oov/psd"
+	"github.com/molizz/psd"
 )
 
 func processLayer(filename string, layerName string, l *psd.Layer) error {

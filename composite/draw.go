@@ -6,8 +6,8 @@ import (
 
 	"golang.org/x/image/draw"
 
-	"github.com/oov/psd"
-	"github.com/oov/psd/blend"
+	"github.com/molizz/psd"
+	"github.com/molizz/psd/blend"
 )
 
 var blendModes = map[psd.BlendMode]blend.Drawer{

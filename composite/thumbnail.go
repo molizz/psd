@@ -7,8 +7,8 @@ import (
 
 	"github.com/pkg/errors"
 
+	"github.com/molizz/psd/blend"
 	"github.com/oov/downscale"
-	"github.com/oov/psd/blend"
 )
 
 var (

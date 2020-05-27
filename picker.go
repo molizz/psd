@@ -4,7 +4,7 @@ import (
 	"image"
 	"image/color"
 
-	psdColor "github.com/oov/psd/color"
+	psdColor "github.com/molizz/psd/color"
 )
 
 type picker interface {
