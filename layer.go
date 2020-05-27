@@ -434,7 +434,7 @@ func readLayerInfo(r io.Reader, cfg *Config, o *DecodeOptions) (layer []Layer, r
 		read += l
 	}
 
-	if layerInfoLen+intSize != read {
+	if layerInfoLen+intSize != read && layerInfoLen+4 != read {
 		return nil, read, errors.New("psd: layer info read size mismatched. expected " + itoa(layerInfoLen+4) + " actual " + itoa(read))
 	}
 	if Debug != nil {
